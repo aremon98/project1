@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60%;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+/** Header **/
+
+/** Heading **/
+
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 5px;
+    background-color: #807979;
+    color: rgb(250, 250, 250);
+    align-items: center;
+}
+.logo {
+    display: flex;
+    flex: 1;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.logo i {
+    color:rgb(76, 192, 238);
+}
+span {
+    color: rgb(53, 183, 235);
+}
+.menu {
+    display: flex;
+    list-style: none;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+.menu ul li {
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+.menu ul li:hover{
+    color: rgb(53, 183, 235);
+}
+/** m-Heading **/
+
+
+.m-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    position: relative;
+    line-height: 25px;
+    word-spacing: 2px;
+    
+}
+.m-heading::before {
+    content: "";
+    background: url(/images/bg-img2.jpg) no-repeat center center/cover ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+h1 {
+  font-size: 2.4rem ;
+  color: antiquewhite;
+  padding: 20ox 5px;
+  margin: 15px;
+}
+.m-heading p{
+    font-size: 1.1rem;
+    color: rgb(47, 67, 83);
+    width: 50%
+}
+.m-heading .link{
+    font-size: 1.2rem;
+    
+    display: flex;
+}
+.active{
+    background-color: rgb(53, 183, 235);
+    color: rgb(255, 255, 255);
+    transition: 0.3s
+   
+}
+.link a {
+    padding: 10px 8px;
+    text-decoration: none;
+    margin: 4px;
+    border-radius: 5px;
+}
+.off {
+    color: rgb(53, 183, 235);
+    transition: 0.3s;
+}
+.active:hover {
+    background-color:rgba(13, 113, 153, 0.973);
+}
+.off:hover {
+    background-color: rgba(13, 113, 153, 0.9);
+    color: #fff
+}
+
+
+.services-area {
+    margin: 50px 0;
+    font-size: 1.1rem;
+    
+}
+
+.service-title h1{
+    color: black;
+   
+}
+.service-title {
+    text-align: center;
+}
+.service-title p {
+    font-size: 1.3rem;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    
+
+}
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+   
+}
+.service {
+    margin: 10px 5px;
+    height: 34vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    
+
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.2s;
+    overflow: hidden;
+    z-index: 11;
+    
+
+}
+.scale {
+    transform: translateY(500%);
+    transition: 0.35s;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+
+.work1::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(/images/work1.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform: scale(1.2)
+    
+}
+
+.work2::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(/images/work2.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform: scale(1.2)
+}
+
+.work3::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(/images/work3.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform: scale(1.2)
+}
+
+.service:hover{
+    opacity: 0.7;
+}
+.service:hover .scale {
+    transform: translate(0);
+}
+
+.offer1:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(/images/fast.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.offer2:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(/images/free.png) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.offer-title{
+    font-size: 1.3rem;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.offer-title h1{
+    color: black;
+}
+.bgcolor {
+    background-color: rgb(124, 124, 124);
+    z-index: -1;
+    padding-bottom: 40px;
+}
